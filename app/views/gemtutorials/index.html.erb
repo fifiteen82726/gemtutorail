@@ -18,7 +18,16 @@
     <% @gemtutorials.each do |gemtutorial| %>
       <tr>
         <td><%= gemtutorial.name %></td>
-        <td><%= gemtutorial.repo %></td>
+        
+
+
+        <td>
+
+          <%= link_to "", gemtutorial.repo, {class: "embedly-card"} %>
+        </td>
+        
+
+
         <td><%= gemtutorial.description %></td>
         <td><%= gemtutorial.genre %></td>
         <td><%= gemtutorial.score %></td>
