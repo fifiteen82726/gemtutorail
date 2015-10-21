@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gemtutorials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Repo</th>
+      <th>Description</th>
+      <th>Genre</th>
+      <th>Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gemtutorials.each do |gemtutorial| %>
+      <tr>
+        <td><%= gemtutorial.name %></td>
+        <td><%= gemtutorial.repo %></td>
+        <td><%= gemtutorial.description %></td>
+        <td><%= gemtutorial.genre %></td>
+        <td><%= gemtutorial.score %></td>
+        <td><%= link_to 'Show', gemtutorial %></td>
+        <td><%= link_to 'Edit', edit_gemtutorial_path(gemtutorial) %></td>
+        <td><%= link_to 'Destroy', gemtutorial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gemtutorial', new_gemtutorial_path %>

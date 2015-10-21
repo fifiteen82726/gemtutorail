@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gemtutorial.name %>
+</p>
+
+<p>
+  <strong>Repo:</strong>
+  <%= @gemtutorial.repo %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gemtutorial.description %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @gemtutorial.genre %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @gemtutorial.score %>
+</p>
+
+<%= link_to 'Edit', edit_gemtutorial_path(@gemtutorial) %> |
+<%= link_to 'Back', gemtutorials_path %>
