@@ -27,6 +27,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'rolify'
 gem 'pry'
+gem 'faker'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
