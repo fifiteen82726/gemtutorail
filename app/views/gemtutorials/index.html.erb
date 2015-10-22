@@ -1,6 +1,52 @@
+<h1>Gemtutorials Index</h1>
+
+
+<% @gemtutorials.each do |gem| %>
+
+
+<ul class="surveys grid">
+  <li class="survey-item">
+    
+    <span class="survey-country grid-only">
+      <%= gem.name %>
+    </span>
+    
+
+    <span class="survey-country list-only">
+      <%= gem.name %>
+    </span>
+    
+    <span class="survey-name">
+      <%= link_to "", gem.repo, {class: "embedly-card"} %>
+    </span>
+
+    <span>
+    <h3> <%= gem.description %> </h3>
+    </span>
+    
+    <div class = "pull-right" >   
+    <span>
+      <button class = 'btn btn-primary'> Learn more... </button>
+
+    </span>
+    </div>
+  </li>
+
+</ul>  
+<% end %>
+
+    
+
+
+
+<!--  -->
+
+
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Gemtutorials</h1>
+
 
 <table>
   <thead>
